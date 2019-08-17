@@ -1,0 +1,52 @@
+<div id="contact" class="container  mt-2 bg-transparent">
+
+  <!-- Main Container -->
+
+  <div class="row">
+    <div class="col-md-8 col-lg-7 mx-auto float-none  z-depth-1 py-0 px-2 bg-transparent">
+
+      <!--Naked Form-->
+      <div class="card-body bg-transparent">
+        <h2 class="h2-responsive card-title bg-transparent"><strong>Send a message</strong></h2>
+
+        <!--Body-->
+        <form id="contactForm" method="post" class="black-text">
+
+          <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="md-form rgba-blue-grey-light">
+                <i class="fas fa-user prefix black-text"></i>
+                <input type="text" id="Name" name="Name" class="form-control">
+                <label asp-for="Name" class="text-black-50">Your name</label>
+                <span asp-validation-for="Name" class="text-danger"></span>
+              </div>
+              <div class="md-form">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="email" id="Email" name="Email" class="form-control">
+                <label for="Email" class="text-black-50">Your email</label>
+                <span asp-validation-for="Email" class="text-danger"></span>
+              </div>
+              <div class="md-form">
+                <i class="fas fa-tag prefix"></i>
+                <input type="text" id="Subject" name="Subject" class="form-control">
+                <label for="Subject" class="text-black-50">Subject</label>
+                <span asp-validation-for="Subject" class="text-danger"></span>
+              </div>
+              <div class="md-form">
+                <i class="fas fa-pencil-alt prefix"></i>
+                <textarea id="Message" name="Message" class="form-control md-textarea" rows="6" cols="70"></textarea>
+                <label for="Message" class="text-black-50">Send message</label>
+                <span asp-validation-for="Message" class="text-danger"></span>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-light-blue">Submit</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

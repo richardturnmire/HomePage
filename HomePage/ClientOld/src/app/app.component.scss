@@ -1,0 +1,15 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background-image: url("~/images/IMG_20180202_141525_878.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template: auto 1fr 5vh / 100vw;
+}
